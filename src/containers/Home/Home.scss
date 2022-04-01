@@ -1,0 +1,52 @@
+.app__home {
+    // position: absolute;
+    // top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .app__home-intro {
+        position: absolute;
+        left: 370px;;
+        top: 30%;
+        color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            line-height: 56px;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            width: 500px;
+            color: var(--text-color);
+        }
+
+        .app__home-btn {
+            width: 200px;
+            height: 55px;
+            font-size: 1rem;
+            margin-top: 1rem;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            border: none;
+            border-radius: 45px;
+            cursor: pointer;
+            border: 1px solid rgb(250, 250, 250);
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: var(--white-color);
+                color: var(--primary-color);
+            }
+        }
+    }
+
+}
