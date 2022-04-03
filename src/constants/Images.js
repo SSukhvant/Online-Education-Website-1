@@ -1,5 +1,5 @@
 import Logo from '../assets/Logo.svg';
-import homebg from '../assets/background.png';
+import homebg from '../assets/Background.png';
 import service1 from '../assets/Service1.png';
 import service2 from '../assets/Service2.png';
 import service3 from '../assets/Service3.png';
