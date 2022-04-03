@@ -2,7 +2,9 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import './About.scss';
 import { Images } from '../../constants';
-import { FaPlay } from 'react-icons/fa'
+import { FaPlay } from 'react-icons/fa';
+import ModalVideo from 'react-modal-video';
+import react, { useState } from 'react';
 
 const Numbers = [
   {
@@ -23,6 +25,7 @@ const Numbers = [
 ]
 
 const About = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className='app__about'>
      <div className='app__bg-circle'/>
@@ -30,7 +33,8 @@ const About = () => {
       <div className='app__about-play'>
       <img src={Images.about} className="app__about-play-img" alt="About"/>
       <img src={Images.leaf} className="app__about-leaf" alt="leaf"/>
-      <button><FaPlay/></button>
+      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="6TxqaeEu_sw" onClose={() => setOpen(false)} />
+      <button onClick={() => setOpen(true)}><FaPlay/></button>
       </div>
 
       <div className='app__about-info'>

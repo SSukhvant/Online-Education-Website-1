@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-modal-video/scss/modal-video.scss';
 import './App.scss';
 import { Navbar } from './components'
 import { About, Footer, Home, Pages, Service } from './containers';
