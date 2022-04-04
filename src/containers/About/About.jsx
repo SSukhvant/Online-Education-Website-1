@@ -29,7 +29,10 @@ const About = () => {
   return (
     <div className='app__about'>
      <div className='app__bg-circle'/>
-      <motion.div className='app__about-items'>
+      <motion.div
+      whileInView={{ y: [-50, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.5 }}
+      className='app__about-items'>
       <div className='app__about-play'>
       <img src={Images.about} className="app__about-play-img" alt="About"/>
       <img src={Images.leaf} className="app__about-leaf" alt="leaf"/>
